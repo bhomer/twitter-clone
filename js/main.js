@@ -3,7 +3,7 @@ $(function() {
 $('textarea').focus(function() {
 
 	var that = $(this);
-	that.css ('height', that.height() * 3);
+	that.css ('height', that.height(45));
 $('#tweet-controls').show();
 $('.button').show();
 });
@@ -47,6 +47,7 @@ $('textarea').css ('height', '40px')
 		newTweet.prependTo('#stream');
 		//$('#stream').prepend($(newTweet));
 		$('textarea').val('');
+		$('#char-count').text("140");
 	});
 
 });
