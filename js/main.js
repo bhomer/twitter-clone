@@ -50,4 +50,16 @@ $('textarea').css ('height', '40px')
 		$('#char-count').text("140");
 	});
 
+//retweet, timestamp buttons only expand if the tweet is clicked on//
+	$('.stats').hide(function() {
+		$('.stats').on(function() {
+			$('.stats').show();
+	});
+
+	$('.reply').hide(function() {
+
+	});
+	
+	});
+
 });
