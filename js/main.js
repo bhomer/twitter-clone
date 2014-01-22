@@ -51,15 +51,13 @@ $('textarea').css ('height', '40px')
 	});
 
 //retweet, timestamp buttons only expand if the tweet is clicked on//
-	$('.stats').hide(function() {
-		$('.stats').on(function() {
-			$('.stats').show();
-	});
+		$('.tweet').click(function() {
+			//animate and show the reply/stats
+			$(this).find('.stats').show({duration: 400});
+		})
 
-	$('.reply').hide(function() {
 
-	});
+		
 	
-	});
 
 });
